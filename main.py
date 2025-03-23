@@ -214,4 +214,4 @@ def all_stations():
 if __name__ == '__main__':
     fetch_all()
     schedule_jobs()
-    app.run(host='0.0.0.0',debug=False)
+    app.run(host='0.0.0.0',debug=False,ssl_context=('server.crt', 'server.key'))
